@@ -1,6 +1,6 @@
 // Initialize the list of blocked hosts
-//let blockedURLs = ["example.com/example", "example.org/examples/example"];
-let blockedURLs = ["www.reddit.com/r/news/","www.reddit.com/r/worldnews/","www.reddit.com/"]//, "www.mozilla.org/en-US/"]//, "http://www.mozilla.org/en-US/"]//, "https://www.mozilla.org/en-US/"];
+let blockedURLs = ["www.example.com/example","www.example.org/examples/example"];
+//let blockedURLs = ["www.reddit.com/r/news/","www.reddit.com/r/worldnews/","www.reddit.com/"]//, "www.mozilla.org/en-US/"]//, "http://www.mozilla.org/en-US/"]//, "https://www.mozilla.org/en-US/"];
 
 // Set the default list on installation.
 browser.runtime.onInstalled.addListener(details => {
