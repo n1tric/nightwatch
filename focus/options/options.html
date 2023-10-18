@@ -12,6 +12,18 @@
       <span class="title">URLs to block:</span>
       <textarea id="blocked-urls" rows="10" cols="50"></textarea>
     </section>
+	<section>
+	  <select id="protocol" name="protocol">
+        <option value="https:">https</option>
+        <option value="http:">http</option>
+        <option value="file:">file</option>
+      </select>
+	  <label for="protocol">://</label>
+	  <input type="text" id="host" name="host" value="www.example.com">
+	  <label for="host">/</label>
+	  <input type="text" id="path" name="path" value="example/index.html">
+	  <button class="add">+</button>
+	</section>
 
     <script src="options.js"></script>
   </body>

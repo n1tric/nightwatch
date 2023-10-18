@@ -23,3 +23,15 @@ browser.storage.local.get().then(updateUI, onError);
 
 // Whenever the contents of the textarea changes, save the new values
 blockedURLsTextArea.addEventListener("change", storeSettings);
+
+////////////////////////////////////////
+// https://jsfiddle.net/jnwrc5ay/592/ //
+////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//    $('.add').on('click', add);
+//  $('.remove').on('click', remove);
+
+//function add() {
+//	
+//}
