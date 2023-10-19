@@ -29,9 +29,13 @@ blockedURLsTextArea.addEventListener("change", storeSettings);
 ////////////////////////////////////////////////////////////////////////////////////
 //
 //
-//    $('.add').on('click', add);
-//  $('.remove').on('click', remove);
+  $('.add').on('click', add);
+  $('.remove').on('click', remove);
 
-//function add() {
-//	
-//}
+function add() {
+  var new_chq_no = parseInt($('#total_chq').val()) + 1;
+  
+  var new_url_input = "<div class='url_input' id='allow_url_input_1'><select id='protocol' name='protocol'><option value='https:'>https</option><option value='http:'>http</option><option value='file:'>file</option><option value='*:'>*</option></select><label for='protocol'>://</label><input type='text' id='host' name='host' value='www.example.com'><label for='host'>/</label><input type='text' id='path' name='path' value='example/index.html'></div>"
+  
+  
+}

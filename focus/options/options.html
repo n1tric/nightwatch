@@ -12,17 +12,39 @@
       <span class="title">URLs to block:</span>
       <textarea id="blocked-urls" rows="10" cols="50"></textarea>
     </section>
-	<section>
-	  <select id="protocol" name="protocol">
-        <option value="https:">https</option>
-        <option value="http:">http</option>
-        <option value="file:">file</option>
-      </select>
-	  <label for="protocol">://</label>
-	  <input type="text" id="host" name="host" value="www.example.com">
-	  <label for="host">/</label>
-	  <input type="text" id="path" name="path" value="example/index.html">
+	<section id="allowed_urls">
+	  <label for="allowed_urls">Allowed URLs</label>
 	  <button class="add">+</button>
+	  <button class="remove">-</button>
+	  <div class="url_input" id="allow_url_input_1">
+	    <select id="protocol" name="protocol">
+          <option value="https:">https</option>
+          <option value="http:">http</option>
+          <option value="file:">file</option>
+		  <option value="*:">*</option>
+        </select>
+	    <label for="protocol">://</label>
+	    <input type="text" id="host" name="host" value="www.example.com">
+	    <label for="host">/</label>
+	    <input type="text" id="path" name="path" value="example/index.html">
+	  </div>
+	</section>
+	<section id="blocked_urls">
+	  <label for="blocked_urls">Blocked URLs</label>
+	  <button class="add">+</button>
+	  <button class="remove">-</button>
+	  <div class="url_input" id="block_url_input_1">
+	    <select id="protocol" name="protocol">
+          <option value="https:">https</option>
+          <option value="http:">http</option>
+          <option value="file:">file</option>
+		  <option value="*:">*</option>
+        </select>
+	    <label for="protocol">://</label>
+	    <input type="text" id="host" name="host" value="www.example.com">
+	    <label for="host">/</label>
+	    <input type="text" id="path" name="path" value="*">
+	  </div>
 	</section>
 
     <script src="options.js"></script>
