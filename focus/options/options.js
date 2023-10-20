@@ -1,3 +1,11 @@
+////////////////////////////////////////
+// https://jsfiddle.net/jnwrc5ay/592/ //
+////////////////////////////////////////////////////////////////////////////////////
+//
+//
+  $('.add').on('click', add);
+  $('.remove').on('click', remove);
+
 const blockedURLsTextArea = document.querySelector("#blocked-urls");
 
 // Store the currently selected settings using browser.storage.local.
@@ -24,18 +32,16 @@ browser.storage.local.get().then(updateUI, onError);
 // Whenever the contents of the textarea changes, save the new values
 blockedURLsTextArea.addEventListener("change", storeSettings);
 
-////////////////////////////////////////
-// https://jsfiddle.net/jnwrc5ay/592/ //
-////////////////////////////////////////////////////////////////////////////////////
-//
-//
-  $('.add').on('click', add);
-  $('.remove').on('click', remove);
 
 function add() {
-  var new_chq_no = parseInt($('#total_chq').val()) + 1;
+//  var new_chq_no = parseInt($('#total_chq').val()) + 1;
   
   var new_url_input = "<div class='url_input' id='allow_url_input_1'><select id='protocol' name='protocol'><option value='https:'>https</option><option value='http:'>http</option><option value='file:'>file</option><option value='*:'>*</option></select><label for='protocol'>://</label><input type='text' id='host' name='host' value='www.example.com'><label for='host'>/</label><input type='text' id='path' name='path' value='example/index.html'></div>"
   
+  $('allow_url_input_1').append(new_url_input)
   
+}
+
+function remove() {
+  var new_url_input = "<div class='url_input' id='allow_url_input_1'><select id='protocol' name='protocol'><option value='https:'>https</option><option value='http:'>http</option><option value='file:'>file</option><option value='*:'>*</option></select><label for='protocol'>://</label><input type='text' id='host' name='host' value='www.example.com'><label for='host'>/</label><input type='text' id='path' name='path' value='example/index.html'></div>"
 }
