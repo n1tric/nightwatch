@@ -17,12 +17,13 @@
 	  <label for="allowed_urls">Allowed URLs</label>
 	  <button class="allowlist_add">+</button>
 	  <button class="allowlist_remove">-</button>
-	  <div class="url_input" id="allow_url_input_1">
+	  <input type="hidden" value="1" id="total_allowed_urls">
+	  <div class="allowed_url_input" id="allow_url_input_1">
 	    <select id="protocol" name="protocol">
-          <option value="https:">https</option>
+          <option value="*:" selected="selected">http/https</option>
+		  <option value="https:">https</option>
           <option value="http:">http</option>
           <option value="file:">file</option>
-		  <option value="*:">*</option>
         </select>
 	    <label for="protocol">://</label>
 	    <input type="text" id="host" name="host" value="www.example.com">
@@ -34,12 +35,13 @@
 	  <label for="blocked_urls">Blocked URLs</label>
 	  <button class="blocklist_add">+</button>
 	  <button class="blocklist_remove">-</button>
-	  <div class="url_input" id="block_url_input_1">
+	  <input type="hidden" value="1" id="total_blocked_urls">
+	  <div class="blocked_url_input" id="block_url_input_1">
 	    <select id="protocol" name="protocol">
-          <option value="https:">https</option>
+          <option value="*:" selected="selected">http/https</option>
+		  <option value="https:">https</option>
           <option value="http:">http</option>
           <option value="file:">file</option>
-		  <option value="*:">*</option>
         </select>
 	    <label for="protocol">://</label>
 	    <input type="text" id="host" name="host" value="www.example.com">
