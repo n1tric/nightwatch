@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="options.css"/>
+	<script src="thirdparty/jquery-3.7.1.min.js"></script>
   </head>
 
   <body>
@@ -14,8 +15,8 @@
     </section>
 	<section id="allowed_urls">
 	  <label for="allowed_urls">Allowed URLs</label>
-	  <button class="add">+</button>
-	  <button class="remove">-</button>
+	  <button class="allowlist_add">+</button>
+	  <button class="allowlist_remove">-</button>
 	  <div class="url_input" id="allow_url_input_1">
 	    <select id="protocol" name="protocol">
           <option value="https:">https</option>
@@ -31,8 +32,8 @@
 	</section>
 	<section id="blocked_urls">
 	  <label for="blocked_urls">Blocked URLs</label>
-	  <button class="add">+</button>
-	  <button class="remove">-</button>
+	  <button class="blocklist_add">+</button>
+	  <button class="blocklist_remove">-</button>
 	  <div class="url_input" id="block_url_input_1">
 	    <select id="protocol" name="protocol">
           <option value="https:">https</option>
