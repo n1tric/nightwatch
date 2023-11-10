@@ -1,4 +1,122 @@
-#blocked-urls {
-  display: block;
-  margin-top: 1em;
+.allowlist_add {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 5px 5px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+  transform: translateY(-2px);
+}
+
+.allowlist_add:hover {
+  background-color: #3e8e41;
+}
+
+.allowlist_add:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.allowlist_remove {
+  display: inline-block;
+  padding: 2px 11px;
+  margin: 5px 2px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #AA0404;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+  transform: translateY(-2px);
+}
+
+.allowlist_remove:hover {
+  background-color: #8e3e3e;
+}
+
+.allowlist_remove:active {
+  background-color: #8e3e3e;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.blocklist_add {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 5px 5px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+  transform: translateY(-2px);
+}
+
+.blocklist_add:hover {
+  background-color: #3e8e41;
+}
+
+.blocklist_add:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.blocklist_remove {
+  display: inline-block;
+  padding: 2px 11px;
+  margin: 5px 2px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #AA0404;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+  transform: translateY(-2px);
+}
+
+.blocklist_remove:hover {
+  background-color: #8e3e3e;
+}
+
+.blocklist_remove:active {
+  background-color: #8e3e3e;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.url_input {
+  margin: 5px 10px;
+  font-size: 16px;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 2px 5px;
 }

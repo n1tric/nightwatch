@@ -1,7 +1,6 @@
 // Initialize the list of blocked hosts
 let blockedURLs = ["https://www.reddit.com/","https://www.example.com:654/example","http://www.example.org:9876/examples/index.html"];
 let allowedURLs = ["http://www.example.gov/ex/index.htm","https://www.example.com/x/12345"]
-//let blockedURLs = ["www.reddit.com/r/news/","www.reddit.com/r/worldnews/","www.reddit.com/"]//, "www.mozilla.org/en-US/"]//, "http://www.mozilla.org/en-US/"]//, "https://www.mozilla.org/en-US/"];
 
 // Set the default list on installation.
 browser.runtime.onInstalled.addListener(details => {
@@ -67,12 +66,6 @@ function handleProxyRequest(requestInfo) {
 	  block = true;
 	}
   })
-  //console.log(`After block`);
-//  if (blockedURLs.indexOf(url.protocol + "//" + url.host + url.pathname) != -1) {
-//  // Write details of the proxied host to the console and return the proxy address
-//    console.log(`Proxying: ${url.protocol + "//" + url.host + url.pathname}`);
-//    return {type: "http", host: "127.0.0.1", port: 65535};
-//  }
 
   // Return instructions to open the requested webpage
   if (allow) {
