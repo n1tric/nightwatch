@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Focus",
-  "version": "0.2",
+  "name": "NightWatch",
+  "version": "0.6",
   
   "description": "Blocks specified URLs",
   
@@ -12,7 +12,8 @@
   
   "browser_specific_settings": {
     "gecko": {
-	  "strict_min_version": "56.0a1"
+	  "strict_min_version": "56.0a1",
+	  "id": "addon@majenson.com"
 	}
   },
   
