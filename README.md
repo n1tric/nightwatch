@@ -1,6 +1,5 @@
-# Web Browser Focus Extension
+# NightWatch
 
- + https://www.reddit.com/r/learnprogramming/comments/uqw8gz/how_to_develop_browser_extensions/
- + https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
- + [Deploying to Firefox Android](https://extensionworkshop.com/documentation/develop/developing-extensions-for-firefox-for-android/)
-   + [Requires web-ext](https://github.com/mozilla/web-ext)
+The greatest web browser focus extension still in development by me.
+
+The goal is to block only specific URLs and not entire websites, so I can block Reddit without blocking software error help.
